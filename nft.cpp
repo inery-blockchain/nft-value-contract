@@ -35,7 +35,6 @@ ACTION nft::issue( name to,
 
 	check( is_account( to ), "to account does not exist");
 
-        // e,g, Get EOS from 3 EOS
         auto symbol = quantity.symbol;
         check( symbol.is_valid(), "invalid symbol name" );
         check( symbol.precision() == 0, "quantity must be a whole number" );
